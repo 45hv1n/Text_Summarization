@@ -1,0 +1,130 @@
+[2024-05-19 01:00:10,566: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 01:00:10,571: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 01:00:10,623: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 01:00:10,623: INFO: common: created directory at: artifacts]
+[2024-05-19 01:00:10,623: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 01:00:10,624: ERROR: main: "'ConfigBox' object has no attribute 'local_dir_file'"]
+Traceback (most recent call last):
+  File "box/box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'local_dir_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 536, in box.box.Box.__getattr__
+  File "box/box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'local_dir_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'local_dir_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'local_dir_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'local_dir_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 536, in box.box.Box.__getattr__
+  File "box/box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'local_dir_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'local_dir_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/pipeline/Data_ingestion_pipeline.py", line 12, in main
+    data_ingestion_config = config_manager.get_data_ingestion_config()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/config/configuration.py", line 27, in get_data_ingestion_config
+    local_dir_file= config_model.local_dir_file,
+  File "box/config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'local_dir_file'"
+[2024-05-19 01:01:00,800: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 01:01:00,802: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 01:01:00,803: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 01:01:00,803: INFO: common: created directory at: artifacts]
+[2024-05-19 01:01:00,803: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 01:01:00,803: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/pipeline/Data_ingestion_pipeline.py", line 14, in main
+    data_ingestion = Data_Ingestion(data_ingestion_config = data_ingestion_config)
+TypeError: 'module' object is not callable
+[2024-05-19 01:02:09,121: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 01:02:09,123: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 01:02:09,123: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 01:02:09,124: INFO: common: created directory at: artifacts]
+[2024-05-19 01:02:09,124: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 01:02:09,124: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/pipeline/Data_ingestion_pipeline.py", line 14, in main
+    data_ingestion = Data_Ingestion(data_ingestion_config = data_ingestion_config_model)
+TypeError: 'module' object is not callable
+[2024-05-19 01:05:48,969: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 01:05:48,971: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 01:05:48,971: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 01:05:48,972: INFO: common: created directory at: artifacts]
+[2024-05-19 01:05:48,972: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 01:05:48,972: ERROR: main: module 'Text_Summarization.components.Data_Ingestion' has no attribute 'Data_Ingestion']
+Traceback (most recent call last):
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/pipeline/Data_ingestion_pipeline.py", line 14, in main
+    data_ingestion = Data_Ingestion.Data_Ingestion(data_ingestion_config = data_ingestion_config_model)
+AttributeError: module 'Text_Summarization.components.Data_Ingestion' has no attribute 'Data_Ingestion'
+[2024-05-19 01:08:38,930: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 01:08:38,932: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 01:08:38,933: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 01:08:38,933: INFO: common: created directory at: artifacts]
+[2024-05-19 01:08:38,933: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 01:08:40,944: INFO: Data_Ingestion: artifacts/data_ingestion/data.zip download with following info 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3148:4FFC2:23A2DD:2EEAC9:664903BE
+Accept-Ranges: bytes
+Date: Sat, 18 May 2024 19:38:40 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100031-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1716061120.729849,VS0,VE719
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 9187acff5ffda19b3bdebb432a650a7ec312a0a5
+Expires: Sat, 18 May 2024 19:43:40 GMT
+Source-Age: 0
+
+]
+[2024-05-19 01:08:41,405: INFO: main: >>>>> stage DATA INGESTION STAGE. completed <<<<<]
