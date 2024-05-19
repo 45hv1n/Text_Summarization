@@ -128,3 +128,281 @@ Source-Age: 0
 
 ]
 [2024-05-19 01:08:41,405: INFO: main: >>>>> stage DATA INGESTION STAGE. completed <<<<<]
+[2024-05-19 19:54:07,297: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 19:54:07,304: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 19:54:07,339: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 19:54:07,340: INFO: common: created directory at: artifacts]
+[2024-05-19 19:54:07,340: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 19:54:07,340: INFO: Data_Ingestion: File already exist]
+[2024-05-19 19:54:08,031: INFO: main: >>>>> stage DATA INGESTION STAGE. completed <<<<<]
+[2024-05-19 19:54:08,032: INFO: main: >>>>> stage DATA VALIDATION STAGE. started <<<<<]
+[2024-05-19 19:54:08,039: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 19:54:08,041: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 19:54:08,041: INFO: common: created directory at: artifacts]
+[2024-05-19 19:54:08,042: ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_ingestionsamsum_dataset']
+Traceback (most recent call last):
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/main.py", line 22, in <module>
+    data_validation.main()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/pipeline/Data_validation_pipeline.py", line 15, in main
+    data_validator.validate_data()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/components/Data_Validation.py", line 29, in validate_data
+    raise e
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/components/Data_Validation.py", line 14, in validate_data
+    all_file_path = os.listdir(os.path.join("artifacts", "data_ingestion" "samsum_dataset"))
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestionsamsum_dataset'
+[2024-05-19 19:55:01,922: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 19:55:01,929: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 19:55:01,931: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 19:55:01,932: INFO: common: created directory at: artifacts]
+[2024-05-19 19:55:01,932: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 19:55:01,933: INFO: Data_Ingestion: File already exist]
+[2024-05-19 19:55:02,504: INFO: main: >>>>> stage DATA INGESTION STAGE. completed <<<<<]
+[2024-05-19 19:55:02,504: INFO: main: >>>>> stage DATA VALIDATION STAGE. started <<<<<]
+[2024-05-19 19:55:02,513: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 19:55:02,515: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 19:55:02,516: INFO: common: created directory at: artifacts]
+[2024-05-19 19:55:02,516: ERROR: main: 'function' object has no attribute 'ALL_FILES_REQUIRED']
+Traceback (most recent call last):
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/main.py", line 22, in <module>
+    data_validation.main()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/pipeline/Data_validation_pipeline.py", line 15, in main
+    data_validator.validate_data()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/components/Data_Validation.py", line 29, in validate_data
+    raise e
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/components/Data_Validation.py", line 17, in validate_data
+    if file not in self.config_model.ALL_FILES_REQUIRED:
+AttributeError: 'function' object has no attribute 'ALL_FILES_REQUIRED'
+[2024-05-19 19:57:01,098: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 19:57:01,109: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 19:57:01,112: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 19:57:01,112: INFO: common: created directory at: artifacts]
+[2024-05-19 19:57:01,113: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 19:57:01,113: INFO: Data_Ingestion: File already exist]
+[2024-05-19 19:57:01,729: INFO: main: >>>>> stage DATA INGESTION STAGE. completed <<<<<]
+[2024-05-19 19:57:01,730: INFO: main: >>>>> stage DATA VALIDATION STAGE. started <<<<<]
+[2024-05-19 19:57:01,739: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 19:57:01,741: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 19:57:01,741: INFO: common: created directory at: artifacts]
+[2024-05-19 19:57:01,742: ERROR: main: 'function' object has no attribute 'ALL_FILES_REQUIRED']
+Traceback (most recent call last):
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/main.py", line 22, in <module>
+    data_validation.main()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/pipeline/Data_validation_pipeline.py", line 15, in main
+    data_validator.validate_data()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/components/Data_Validation.py", line 29, in validate_data
+    raise e
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/components/Data_Validation.py", line 17, in validate_data
+    if file not in self.config_model.ALL_FILES_REQUIRED:
+AttributeError: 'function' object has no attribute 'ALL_FILES_REQUIRED'
+[2024-05-19 19:58:47,481: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 19:58:47,487: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 19:58:47,490: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 19:58:47,491: INFO: common: created directory at: artifacts]
+[2024-05-19 19:58:47,491: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 19:58:47,492: INFO: Data_Ingestion: File already exist]
+[2024-05-19 19:58:48,069: INFO: main: >>>>> stage DATA INGESTION STAGE. completed <<<<<]
+[2024-05-19 19:58:48,070: INFO: main: >>>>> stage DATA VALIDATION STAGE. started <<<<<]
+[2024-05-19 19:58:48,079: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 19:58:48,081: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 19:58:48,082: INFO: common: created directory at: artifacts]
+[2024-05-19 19:58:48,082: ERROR: main: 'function' object has no attribute 'ALL_FILES_REQUIRED']
+Traceback (most recent call last):
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/main.py", line 22, in <module>
+    data_validation.main()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/pipeline/Data_validation_pipeline.py", line 15, in main
+    data_validator.validate_data()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/components/Data_Validation.py", line 29, in validate_data
+    raise e
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/components/Data_Validation.py", line 17, in validate_data
+    if file not in self.config_model.ALL_FILES_REQUIRED:
+AttributeError: 'function' object has no attribute 'ALL_FILES_REQUIRED'
+[2024-05-19 19:59:38,252: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 19:59:38,259: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 19:59:38,261: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 19:59:38,262: INFO: common: created directory at: artifacts]
+[2024-05-19 19:59:38,262: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 19:59:38,263: INFO: Data_Ingestion: File already exist]
+[2024-05-19 19:59:38,815: INFO: main: >>>>> stage DATA INGESTION STAGE. completed <<<<<]
+[2024-05-19 19:59:38,815: INFO: main: >>>>> stage DATA VALIDATION STAGE. started <<<<<]
+[2024-05-19 19:59:38,821: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 19:59:38,823: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 19:59:38,823: INFO: common: created directory at: artifacts]
+[2024-05-19 19:59:38,823: INFO: Data_Validation: aaaaaaajfjfjfjfjfjfjfjfj <bound method ConfigurationManager.get_data_validation_config of <Text_Summarization.config.configuration.ConfigurationManager object at 0x7f4975fd3bb0>>]
+[2024-05-19 19:59:38,824: ERROR: main: 'function' object has no attribute 'ALL_FILES_REQUIRED']
+Traceback (most recent call last):
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/main.py", line 22, in <module>
+    data_validation.main()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/pipeline/Data_validation_pipeline.py", line 15, in main
+    data_validator.validate_data()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/components/Data_Validation.py", line 31, in validate_data
+    raise e
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/components/Data_Validation.py", line 19, in validate_data
+    if file not in self.config_model.ALL_FILES_REQUIRED:
+AttributeError: 'function' object has no attribute 'ALL_FILES_REQUIRED'
+[2024-05-19 20:02:37,620: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 20:02:37,628: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 20:02:37,630: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 20:02:37,630: INFO: common: created directory at: artifacts]
+[2024-05-19 20:02:37,631: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 20:02:37,631: INFO: Data_Ingestion: File already exist]
+[2024-05-19 20:02:38,245: INFO: main: >>>>> stage DATA INGESTION STAGE. completed <<<<<]
+[2024-05-19 20:02:38,245: INFO: main: >>>>> stage DATA VALIDATION STAGE. started <<<<<]
+[2024-05-19 20:02:38,251: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 20:02:38,252: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 20:02:38,253: INFO: common: created directory at: artifacts]
+[2024-05-19 20:02:38,253: INFO: common: created directory at: artifacts/data_validation]
+[2024-05-19 20:02:38,254: ERROR: main: name 'logger' is not defined]
+Traceback (most recent call last):
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/main.py", line 22, in <module>
+    data_validation.main()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/pipeline/Data_validation_pipeline.py", line 14, in main
+    logger.info(f"aaaaaaajfjfjfjfjfjfjfjfj {dataValidation_model}")
+NameError: name 'logger' is not defined
+[2024-05-19 20:02:56,717: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 20:02:56,724: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 20:02:56,726: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 20:02:56,726: INFO: common: created directory at: artifacts]
+[2024-05-19 20:02:56,727: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 20:02:56,727: INFO: Data_Ingestion: File already exist]
+[2024-05-19 20:02:57,442: INFO: main: >>>>> stage DATA INGESTION STAGE. completed <<<<<]
+[2024-05-19 20:02:57,442: INFO: main: >>>>> stage DATA VALIDATION STAGE. started <<<<<]
+[2024-05-19 20:02:57,452: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 20:02:57,455: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 20:02:57,457: INFO: common: created directory at: artifacts]
+[2024-05-19 20:02:57,458: INFO: common: created directory at: artifacts/data_validation]
+[2024-05-19 20:02:57,460: INFO: main: >>>>> stage DATA VALIDATION STAGE. completed <<<<<]
+[2024-05-19 20:04:06,679: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 20:04:06,686: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 20:04:06,688: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 20:04:06,689: INFO: common: created directory at: artifacts]
+[2024-05-19 20:04:06,689: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 20:04:06,690: INFO: Data_Ingestion: File already exist]
+[2024-05-19 20:04:07,276: INFO: main: >>>>> stage DATA INGESTION STAGE. completed <<<<<]
+[2024-05-19 20:04:07,277: INFO: main: >>>>> stage DATA VALIDATION STAGE. started <<<<<]
+[2024-05-19 20:04:07,285: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 20:04:07,287: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 20:04:07,288: INFO: common: created directory at: artifacts]
+[2024-05-19 20:04:07,288: INFO: common: created directory at: artifacts/data_validation]
+[2024-05-19 20:04:07,292: INFO: main: >>>>> stage DATA VALIDATION STAGE. completed <<<<<]
+[2024-05-19 20:05:20,859: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 20:05:20,866: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 20:05:20,868: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 20:05:20,869: INFO: common: created directory at: artifacts]
+[2024-05-19 20:05:20,869: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 20:05:20,869: INFO: Data_Ingestion: File already exist]
+[2024-05-19 20:05:21,442: INFO: main: >>>>> stage DATA INGESTION STAGE. completed <<<<<]
+[2024-05-19 20:05:21,443: INFO: main: >>>>> stage DATA VALIDATION STAGE. started <<<<<]
+[2024-05-19 20:05:21,452: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 20:05:21,454: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 20:05:21,455: INFO: common: created directory at: artifacts]
+[2024-05-19 20:05:21,455: INFO: common: created directory at: artifacts/data_validation]
+[2024-05-19 20:05:21,456: INFO: Data_Validation: 
+
+ vaasadadadad: Validation Status: {validation_status} 
+
+]
+[2024-05-19 20:05:21,457: INFO: Data_Validation: 
+
+ vaasadadadad: Validation Status: {validation_status} 
+
+]
+[2024-05-19 20:05:21,458: INFO: Data_Validation: 
+
+ vaasadadadad: Validation Status: {validation_status} 
+
+]
+[2024-05-19 20:05:21,458: INFO: Data_Validation: 
+
+ vaasadadadad: Validation Status: {validation_status} 
+
+]
+[2024-05-19 20:05:21,459: INFO: main: >>>>> stage DATA VALIDATION STAGE. completed <<<<<]
+[2024-05-19 20:05:40,922: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 20:05:40,927: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 20:05:40,929: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 20:05:40,929: INFO: common: created directory at: artifacts]
+[2024-05-19 20:05:40,930: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 20:05:40,930: INFO: Data_Ingestion: File already exist]
+[2024-05-19 20:05:41,536: INFO: main: >>>>> stage DATA INGESTION STAGE. completed <<<<<]
+[2024-05-19 20:05:41,537: INFO: main: >>>>> stage DATA VALIDATION STAGE. started <<<<<]
+[2024-05-19 20:05:41,545: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 20:05:41,547: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 20:05:41,548: INFO: common: created directory at: artifacts]
+[2024-05-19 20:05:41,548: INFO: common: created directory at: artifacts/data_validation]
+[2024-05-19 20:05:41,549: ERROR: main: name 'validation_status' is not defined]
+Traceback (most recent call last):
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/main.py", line 22, in <module>
+    data_validation.main()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/pipeline/Data_validation_pipeline.py", line 18, in main
+    data_validator.validate_data()
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/components/Data_Validation.py", line 29, in validate_data
+    raise e
+  File "/home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/src/Text_Summarization/components/Data_Validation.py", line 17, in validate_data
+    logger.info(f"\n\n vaasadadadad: Validation Status: {validation_status} \n\n")
+NameError: name 'validation_status' is not defined
+[2024-05-19 20:06:06,384: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 20:06:06,390: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 20:06:06,391: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 20:06:06,392: INFO: common: created directory at: artifacts]
+[2024-05-19 20:06:06,392: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 20:06:06,393: INFO: Data_Ingestion: File already exist]
+[2024-05-19 20:06:06,936: INFO: main: >>>>> stage DATA INGESTION STAGE. completed <<<<<]
+[2024-05-19 20:06:06,936: INFO: main: >>>>> stage DATA VALIDATION STAGE. started <<<<<]
+[2024-05-19 20:06:06,942: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 20:06:06,943: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 20:06:06,944: INFO: common: created directory at: artifacts]
+[2024-05-19 20:06:06,945: INFO: common: created directory at: artifacts/data_validation]
+[2024-05-19 20:06:06,945: INFO: Data_Validation: 
+
+ vaasadadadad: Validation Status: None 
+
+]
+[2024-05-19 20:06:06,946: INFO: Data_Validation: 
+
+ vaasadadadad: Validation Status: None 
+
+]
+[2024-05-19 20:06:06,946: INFO: Data_Validation: 
+
+ vaasadadadad: Validation Status: None 
+
+]
+[2024-05-19 20:06:06,947: INFO: Data_Validation: 
+
+ vaasadadadad: Validation Status: None 
+
+]
+[2024-05-19 20:06:06,947: INFO: main: >>>>> stage DATA VALIDATION STAGE. completed <<<<<]
+[2024-05-19 20:47:32,627: INFO: main: >>>>> stage DATA INGESTION STAGE. started <<<<<]
+[2024-05-19 20:47:32,630: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 20:47:32,631: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 20:47:32,631: INFO: common: created directory at: artifacts]
+[2024-05-19 20:47:32,631: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-19 20:47:32,632: INFO: Data_Ingestion: File already exist]
+[2024-05-19 20:47:32,941: INFO: main: >>>>> stage DATA INGESTION STAGE. completed <<<<<]
+[2024-05-19 20:47:32,941: INFO: main: >>>>> stage DATA VALIDATION STAGE. started <<<<<]
+[2024-05-19 20:47:32,944: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/config/config.yaml loaded successfully]
+[2024-05-19 20:47:32,944: INFO: common: yaml file: /home/arvin/Desktop/p3r50n47/text_summarization/Text_Summarization/params.yaml loaded successfully]
+[2024-05-19 20:47:32,945: INFO: common: created directory at: artifacts]
+[2024-05-19 20:47:32,945: INFO: common: created directory at: artifacts/data_validation]
+[2024-05-19 20:47:32,945: INFO: Data_Validation: 
+
+ vaasadadadad: Validation Status: None 
+
+]
+[2024-05-19 20:47:32,945: INFO: Data_Validation: 
+
+ vaasadadadad: Validation Status: True 
+
+]
+[2024-05-19 20:47:32,946: INFO: Data_Validation: 
+
+ vaasadadadad: Validation Status: True 
+
+]
+[2024-05-19 20:47:32,946: INFO: Data_Validation: 
+
+ vaasadadadad: Validation Status: False 
+
+]
+[2024-05-19 20:47:32,946: INFO: main: >>>>> stage DATA VALIDATION STAGE. completed <<<<<]
