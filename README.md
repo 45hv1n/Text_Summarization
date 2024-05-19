@@ -2,7 +2,7 @@
 
 DataSet URL: "https://github.com/entbappy/Branching-tutorial/raw/master/summarizer-data.zip"
 
-##WorkFlow
+### WorkFlow
 
 1. Update config.yaml
 2. Update params.yaml
